@@ -1,14 +1,37 @@
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(galaxy.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 30px;
+}
+
+.container{
+  min-height: 50vh;
+  width: 80%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(galaxy.avif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 30px;
+}
+
 .container {
     margin-top: 50px;
     text-align: center;
+
   }
   
   h1 {
     margin-bottom: 50px;
+    color: white !important;
   }
   
   form {
     margin-top: 25px;
+ 
   }
   
   input[type="button"] {
@@ -16,6 +39,7 @@
     height: 50px;
     font-size: 20px;
     margin: 5px;
+  
   }
   
   input[type="text"] {
@@ -23,5 +47,30 @@
     height: 50px;
     font-size: 20px;
     margin: 5px;
+
+  
   }
   
+
+  @media screen and (max-width: 480px) {
+    .header{
+      min-height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(galaxy.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      padding: 20px;
+    }
+
+    .container{
+      min-height: 25vh;
+      width: 40%;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(galaxy.avif);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      padding: 30px;
+    }
+    
+  }
